@@ -5,14 +5,14 @@
   flex-direction: $direction;
 }
 
-@mixin min-size($minWidth, $minHeight) {
-  min-width: $minWidth;
-  min-height: $minHeight;
+@mixin min-size($min-width, $min-height) {
+  min-width: $min-width;
+  min-height: $min-height;
 }
 
-@mixin max-size($maxWidth, $maxHeight) {
-  max-width: $maxWidth;
-  max-height: $maxHeight;
+@mixin max-size($max-width, $max-height) {
+  max-width: $max-width;
+  max-height: $max-height;
 }
 
 @mixin size($width, $height) {

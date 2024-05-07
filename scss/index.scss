@@ -1,6 +1,8 @@
 @import "reset";
 @import "functions";
 
+$phone-color: linear-gradient(-120deg, rgb(130, 130, 207), rgb(98, 98, 164));
+
 body {
   @include flex(space-evenly, center, column);
 }
@@ -15,7 +17,7 @@ body {
   @include min-size(260px, 520px);
   padding: 2px;
   border-radius: 32px;
-  background: linear-gradient(-120deg, rgb(130, 130, 207), rgb(98, 98, 164));
+  background: $phone-color;
 }
 .screen {
   width: 100%;

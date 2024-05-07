@@ -6,5 +6,6 @@
       "savePath": "~/../css",
       "savePathReplacementPairs": null
     }
-  ]
+  ],
+  "cmake.configureOnOpen": false
 }
