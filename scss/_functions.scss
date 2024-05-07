@@ -1,0 +1,21 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin min-size($minWidth, $minHeight) {
+  min-width: $minWidth;
+  min-height: $minHeight;
+}
+
+@mixin max-size($maxWidth, $maxHeight) {
+  max-width: $maxWidth;
+  max-height: $maxHeight;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

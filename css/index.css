@@ -17,24 +17,24 @@ body {
 body {
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .phone-area {
-  gap: 32px;
   display: flex;
   align-items: center;
-  flex-direction: row;
   justify-content: space-evenly;
+  flex-direction: row;
+  gap: 32px;
 }
 
 .phone {
-  padding: 2px;
-  min-width: 260px;
   width: 260px;
-  min-height: 520px;
   height: 520px;
+  min-width: 260px;
+  min-height: 520px;
+  padding: 2px;
   border-radius: 32px;
   background: linear-gradient(-120deg, rgb(130, 130, 207), rgb(98, 98, 164));
 }
@@ -47,6 +47,7 @@ body {
 }
 
 .panel {
+  gap: 8px;
   padding: 4px;
   height: 100%;
   display: flex;
