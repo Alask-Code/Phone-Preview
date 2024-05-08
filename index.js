@@ -1,1 +1,0 @@
-document.title = document.querySelector(".title").innerHTML;

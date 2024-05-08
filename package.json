@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
   "name": "phone-preview",
-  "main": "electron/main.js",
+  "main": "electron/app.js",
   "scripts": {
     "elec": "electron .",
     "nodemon": "nodemon --exec electron .",
