@@ -49,19 +49,19 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  border-radius: 32px;
   position: relative;
-  border-radius: 30px;
+  border: 4px solid black;
   box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.75), 0px 0px 2px rgba(0, 0, 0, 0.75);
-  background: greenyellow;
 }
 
 .camera {
   top: 4px;
   align-self: center;
-  width: 16px;
-  height: 16px;
   border-radius: 50%;
   position: absolute;
+  width: 12px;
+  height: 12px;
   border: 1px solid black;
   background: rgb(13, 0, 23);
 }
@@ -69,6 +69,6 @@ body {
 .content {
   width: 100%;
   height: 100%;
-  border-radius: inherit;
-  background: black;
+  border-radius: 28px;
+  background: white;
 }/*# sourceMappingURL=index.css.map */
