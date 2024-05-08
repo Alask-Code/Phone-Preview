@@ -9,7 +9,7 @@
     "publish": "electron-builder -p=always"
   },
   "build": {
-    "productName": "Phone Preview",
+    "productName": "",
     "appId": "com.alaskcode.phonepreview",
     "nsis": {
       "publish": {
