@@ -3,7 +3,22 @@
   "name": "phone-preview",
   "main": "electron/main.js",
   "scripts": {
-    "test": "electron ."
+    "elec": "electron .",
+    "nodemon": "nodemon --exec electron .",
+    "build": "electron-builder -p=never",
+    "publish": "electron-builder -p=always"
+  },
+  "build": {
+    "productName": "Phone Preview",
+    "appId": "com.alaskcode.phonepreview",
+    "nsis": {
+      "publish": {
+        "provider": "github",
+        "owner": "Alask-code",
+        "repo": "Phone-Preview"
+      },
+      "oneClick": false
+    }
   },
   "author": "Alask-Code",
   "license": "LGPL-3.0-or-later",
