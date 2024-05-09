@@ -47,13 +47,13 @@ body {
   @include size(260px, fit-content);
   @include flex(space-between, center, row);
   color: white;
-  padding: 4px;
+  padding: 8px;
   border-radius: 32px;
   background: rgba(13, 0, 23, 0.75);
 }
 .controls {
   @include flex(center, center, row);
-  gap: 4px;
+  gap: 6px;
 }
 .drag,
 .minimize,

@@ -6,14 +6,14 @@ function createWindow () {
     width: 380,
     height: 680,
     title: appTitle,
-    alwaysOnTop: true,
+    // alwaysOnTop: true,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true
     }
   });
-  win.openDevTools();
+  win.minimize();
   win.removeMenu();
   win.loadFile('index.html');
   return win;

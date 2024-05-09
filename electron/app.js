@@ -4,5 +4,5 @@ require('electron-reload')('../');
 const createWindow = require('./BrowserWindow');
 
 app.whenReady().then(() => {
-  createWindow();
+  const win = createWindow();
 });
