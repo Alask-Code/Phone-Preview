@@ -5,16 +5,17 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 380,
     height: 680,
+    frame: false,
     title: appTitle,
-    // alwaysOnTop: true,
+    resizable: false,
+    transparent: true,
+    alwaysOnTop: true,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true
     }
   });
-  win.openDevTools();
-  win.minimize();
   win.removeMenu();
   win.loadFile('index.html');
   return win;
