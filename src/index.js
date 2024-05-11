@@ -1,6 +1,7 @@
 const { ipcRenderer } = require('electron');
 const { appTitle } = require('./manifest.json');
 document.querySelector('.title').innerHTML = appTitle;
+
 setTimeout(() => {
-  ipcRenderer.send('setSize', 512, 256);
+  ipcRenderer.send('setSize', document.body.offsetWidth, document.body.offsetHeight);
 }, 2000);

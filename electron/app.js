@@ -1,9 +1,11 @@
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = true;
-const { app } = require('electron');
 require('electron-reload')('../');
-const createWindow = require('./BrowserWindow');
-const registerIpcMain = require('./ipcMain');
+
+const { app } = require('electron');
 app.whenReady().then(() => {
+  const createWindow = require('./BrowserWindow');
   const win = createWindow();
+
+  const registerIpcMain = require('./ipcMain');
   registerIpcMain(win);
 });

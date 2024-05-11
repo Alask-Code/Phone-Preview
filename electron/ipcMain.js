@@ -1,5 +1,5 @@
 const { ipcMain } = require('electron');
-const { log } = require('console');
+
 function registerIpcMain (win) {
   ipcMain.on('open-dev-tools', () => {
     win.openDevTools();
@@ -11,4 +11,5 @@ function registerIpcMain (win) {
     win.setSize(w, h, true);
   });
 }
+
 module.exports = registerIpcMain;
