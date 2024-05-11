@@ -1,7 +1,7 @@
 const { ipcRenderer } = require('electron');
 
-function useIpcRenderer (message) {
-  ipcRenderer.send(message);
+function useIpcRenderer (message, ...args) {
+  ipcRenderer.send(message, ...args);
 }
 
 module.exports = useIpcRenderer;

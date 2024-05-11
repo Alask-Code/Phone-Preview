@@ -4,8 +4,8 @@ function registerIpcMain (win) {
   ipcMain.on('open-dev-tools', () => {
     win.openDevTools();
   });
-  ipcMain.on('resize', () => {
-    win.setSize(10, 10);
+  ipcMain.on('resize', (width, height) => {
+    win.setSize(width, height);
   });
 }
 module.exports = registerIpcMain;

@@ -13,6 +13,7 @@ function createWindow () {
       enableRemoteModule: true
     }
   });
+  win.openDevTools();
   win.minimize();
   win.removeMenu();
   win.loadFile('index.html');
