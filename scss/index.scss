@@ -1,7 +1,12 @@
-@import "reset";
-@import "functions";
+@import "modules/reset";
+@import "modules/fonts";
+@import "modules/functions";
 
 $phone-color: linear-gradient(-120deg, rgb(130, 130, 207), rgb(98, 98, 164));
+
+* {
+  font-family: "Raleway";
+}
 
 body {
   @include flex(space-evenly, center, column);
