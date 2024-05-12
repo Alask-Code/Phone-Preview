@@ -1,8 +1,7 @@
 @import "modules/reset";
 @import "modules/fonts";
 @import "modules/functions";
-
-$phone-color: linear-gradient(-120deg, rgb(130, 130, 207), rgb(98, 98, 164));
+@import "modules/variables";
 
 * {
   font-family: "Raleway";
@@ -13,7 +12,6 @@ body {
 
   gap: 16px;
   overflow: hidden;
-  background: red;
 }
 
 .phone {
@@ -26,11 +24,10 @@ body {
 }
 .screen {
   @include flex(center, flex-start, column);
+  @include size(100%, 100%);
 
-  width: 100%;
-  height: 100%;
-  border-radius: 32px;
   position: relative;
+  border-radius: 32px;
   border: 4px solid black;
 }
 .camera {
@@ -57,26 +54,31 @@ body {
   @include size(260px, fit-content);
   @include flex(space-between, center, row);
 
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 4px 8px;
   color: white;
-  padding: 8px;
   border-radius: 32px;
-  background: rgba(13, 0, 23, 0.75);
+  background: rgba(90, 90, 90, 0.75);
 }
 .controls {
   @include flex(center, center, row);
 
   gap: 6px;
 }
-.drag,
-.minimize,
-.close {
+.fm-button {
   @include size(12px, 12px);
-
   border-radius: 12px;
-  background: lightgray;
 }
 .drag {
-  @include size(36px, 12px);
-
+  @include size(30px, 12px);
+  background: yellow;
   -webkit-app-region: drag;
+}
+.minimize {
+  background: cyan;
+}
+.close {
+  background: red;
 }

@@ -1,4 +1,4 @@
-const { BrowserWindow, ipcMain } = require('electron');
+const { BrowserWindow } = require('electron');
 const { appTitle } = require('./../manifest.json');
 
 function createWindow () {

@@ -1,6 +1,12 @@
 const { ipcMain } = require('electron');
 
 function registerIpcMain (win) {
+  ipcMain.on('minimize', () => {
+    win.minimize();
+  });
+  ipcMain.on('close', () => {
+    win.close();
+  });
   ipcMain.on('open-dev-tools', () => {
     win.openDevTools();
   });
