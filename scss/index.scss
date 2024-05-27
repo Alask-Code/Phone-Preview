@@ -69,16 +69,20 @@ body {
 }
 .fm-button {
   @include size(12px, 12px);
+  background: gray;
   border-radius: 12px;
 }
 .drag {
   @include size(30px, 12px);
-  background: yellow;
   -webkit-app-region: drag;
 }
 .minimize {
-  background: cyan;
+  &:hover {
+    background: gold;
+  }
 }
 .close {
-  background: red;
+  &:hover {
+    background: firebrick;
+  }
 }

@@ -9,6 +9,7 @@
           user-select: none;
   box-sizing: border-box;
   font-family: sans-serif;
+  transition-duration: 0.25s;
 }
 
 html,
@@ -100,20 +101,20 @@ body {
 .fm-button {
   width: 12px;
   height: 12px;
+  background: gray;
   border-radius: 12px;
 }
 
 .drag {
   width: 30px;
   height: 12px;
-  background: yellow;
   -webkit-app-region: drag;
 }
 
-.minimize {
-  background: cyan;
+.minimize:hover {
+  background: gold;
 }
 
-.close {
-  background: red;
+.close:hover {
+  background: firebrick;
 }/*# sourceMappingURL=index.css.map */
