@@ -96,6 +96,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  -webkit-app-region: no-drag;
   gap: 6px;
 }
 
@@ -104,11 +105,6 @@ body {
   height: 12px;
   background: gray;
   border-radius: 12px;
-}
-
-.drag {
-  width: 30px;
-  height: 12px;
 }
 
 .minimize:hover {

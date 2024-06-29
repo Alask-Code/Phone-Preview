@@ -9,7 +9,7 @@ function createWindow() {
     title: appTitle,
     resizable: false,
     transparent: true,
-    alwaysOnTop: true,
+    // alwaysOnTop: true,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,

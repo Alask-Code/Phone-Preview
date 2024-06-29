@@ -57,7 +57,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   -webkit-app-region: drag;
-
   padding: 4px 8px;
   color: white;
   border-radius: 32px;
@@ -65,6 +64,7 @@ body {
 }
 .controls {
   @include flex(center, center, row);
+  -webkit-app-region: no-drag;
 
   gap: 6px;
 }
@@ -72,9 +72,6 @@ body {
   @include size(12px, 12px);
   background: gray;
   border-radius: 12px;
-}
-.drag {
-  @include size(30px, 12px);
 }
 .minimize {
   &:hover {
