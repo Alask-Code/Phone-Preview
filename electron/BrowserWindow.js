@@ -1,7 +1,7 @@
 const { BrowserWindow } = require('electron');
 const { appTitle } = require('./../manifest.json');
 
-function createWindow () {
+function createWindow() {
   const win = new BrowserWindow({
     width: 380,
     height: 680,
@@ -17,6 +17,7 @@ function createWindow () {
     }
   });
   win.removeMenu();
+  win.openDevTools();
   win.loadFile('index.html');
   return win;
 };
