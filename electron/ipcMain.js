@@ -1,6 +1,7 @@
+
 const { ipcMain } = require('electron');
 
-function registerIpcMain (win) {
+function registerIpcMain(win) {
   ipcMain.on('minimize', () => {
     win.minimize();
   });
